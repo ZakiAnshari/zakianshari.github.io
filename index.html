@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> My Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/avatar-1.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box" >
+          <img src="./assets/images/zaki.png" alt="Richard hanrick"  style="border-radius: 20%;" width="90">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Zaki Anshari</h1>
+          <p class="title">Web developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:richard@example.com" class="contact-link">zakianshari707@gmail.com</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="+62 823-8744-4002" class="contact-link">+62 823-8744-4002</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Age</p>
+              <time datetime="1982-06-23">21</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Padang, West Sumatra, Indonesia</address>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Sertifikat</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Saya Zaki Anshari berdomisili di Kota Padang , dan saya sangat bersemangat dan berdedikasi pada pekerjaan saya, Saya sangat tertarik dalam bekerja di bidang pengembangan website.
+          </p>
+
+          <p>
+            Disiplin dan mampu bekerja dengan baik dalam tim maupun individu , memiliki ketelitian dan kemampuan komunikasi yang baik. Senang mempelajari hal baru, dan siap mengerjakan project sesuai permintaan.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/frond.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">FrontEnd</h4>
+
+                <p class="service-item-text">
+                  Membangun website menggunakan bahasa javaScript dan library React.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/back1.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">BackEnd</h4>
+
+                <p class="service-item-text">
+                  Membangun Restfull API menggunakan framework Laravel
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Skills</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <img src="./assets/images/html-5.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/css.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/js.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/php.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/api.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/github.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/gitlab.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/1611079.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/Bootstrap_logo.svg.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/985px-Laravel.svg.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/java-logo-1.png" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/5968313.png" alt="client logo">
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SDN 06 Lasi Mudo</h4>
+
+              <span>2007 — 2013</span>
+
+              <p class="timeline-text">
+                Lasi Mudo, Lasi, Kec.Candung, Kabupaten Agam, Sumatera Barat, Indonesia
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Pondok Pesantren MTI Pasia</h4>
+
+              <span>2013 — 2020</span>
+
+              <p class="timeline-text">
+                Jalan Lapangan Pitalo, Pasia, Kec. Ampek Angkek, Kabupaten Agam, Sumatera Barat, Indonesia
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universitas Putra Indonesia "YPTK" Padang</h4>
+
+              <span>2020 — Sekarang</span>
+
+              <p class="timeline-text">
+                Jl. Raya Lubuk Begalung Padang Sumatera Barat, Indonesia
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        
+
+      </article>
+
+      <article class="sertifikat" data-page="sertifikat">
+
+        <header>
+          <h2 class="h2 article-title">Sertifikat</h2>
+        </header>
+
+        <section class="projects">
+
+         
+
+          
+
+            <button  data-select>
+
+          
+
+         
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Sertifikat-Responsif.png" alt="finance" loading="lazy">
+                </figure>
+
+                
+              </a>
+            </li>
+            
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title"> Our Project</h2>
+        </header>
+
+        <section >
+          <div id="outer-grid3">
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <h3 class="h3 blog-item-title" >LMS</h3>
+                  </div>
+                  <img src="./assets/images/LMS.png" alt="finance" loading="lazy">
+                </figure>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <h3 class="h3 blog-item-title" >PORTAL GATEAWAY</h3>
+                  </div>
+                  <img src="./assets/images/PORTALGATEAWAY.png" alt="finance" loading="lazy">
+                </figure>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <h3 class="h3 blog-item-title" >WEB EXPO</h3>
+                  </div>
+                  <img src="./assets/images/BLUEEXPO.png" alt="finance" loading="lazy">
+                </figure>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <h3 class="h3 blog-item-title" >DIRECTORY MALL</h3>
+                  </div>
+                  <img src="./assets/images/DIRECTORYMALL.png" alt="finance" loading="lazy">
+                </figure>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <h3 class="h3 blog-item-title" >AUCTION LELANG</h3>
+                  </div>
+                  <img src="./assets/images/LELANGMOBIL.png" alt="finance" loading="lazy">
+                </figure>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <h3 class="h3 blog-item-title" >AUCTION LELANG</h3>
+                  </div>
+                  <img src="./assets/images/LELANGDESK.png" alt="finance" loading="lazy">
+                </figure>
+              </a>
+            </li>
+          </div>
+        </section>
+
+      </article>
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.3148794624746!2d100.39074344560505!3d-0.9589485497735498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b979a8296099%3A0x8547621a095a7d85!2sMasjid%20Nurul%20Iqdam!5e0!3m2!1sid!2sid!4v1688053835306!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Kirim Pesan</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
