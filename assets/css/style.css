@@ -787,7 +787,7 @@ main {
 }
 
 .clients-item img {
-  width: 80%;
+  width: 60%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
@@ -1517,12 +1517,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-list {
-    gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
-  }
+     .clients-list {
+        gap: 0px;
+        margin: -20px -30px;
+        padding: 43px;
+        scroll-padding-inline: 24px;
+    }
+
 
   .clients-item { min-width: calc(33.33% - 35px); }
 
